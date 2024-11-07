@@ -9,4 +9,17 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  --text-color: #000028;
+  --accent-color: #ff0070;
+  --rec-color: var(--accent-color);
+  --bg-color: var(--text-color);
+  --bg-image: url(../images/cover-image-dark.png);
+  --main-text-color: #f1b2ce;
+  --title-color: #db00ff;
+  --title-shadow: var(--accent-color);
+  --text-box-bg-color: var(--accent-color);
+  --text-box-color: var(--bg-color);
+  --section-title-color: var(--accent-color);
+  --hover-color: 1px solid var(--accent-color);
+  --article-title-color: var(--bg-color);
 }
