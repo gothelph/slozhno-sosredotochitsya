@@ -4,33 +4,55 @@
   background-size: cover;
 }
 
+.corner {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+}
+
+.corner-top {
+  top: 10px;
+  right: 10px;
+  border-top: 1px solid var(--accent-color);
+  border-right: 1px solid var(--accent-color);
+}
+
+.corner-bottom {
+  left: 10px;
+  bottom: 10px;
+  border-bottom: 1px solid var(--accent-color);
+  border-left: 1px solid var(--accent-color);
+}
+
 .header {
   height: 100vh;
   position: relative;
-  padding: 10px 20px 10px 10px;
+  padding: 10px;
   display: grid;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: 1fr auto 1fr;
 }
 
 .header__rec {
+  font-family: "IBM Plex mono";
+  gap: 10px;
   position: absolute;
   color: var(--rec-color);
   text-transform: uppercase;
-  top: 21px;
-  right: 49px;
+  top: 13px;
+  right: 39px;
 }
 
 .header__rec::after {
   position: absolute;
-  content: "";
-  border-radius: 50%;
   width: 10px;
   height: 10px;
-  top: 50%;
-  right: 0;
+  content: "";
   margin: -5px -20px 0 0;
-  background-color: var(--rec-color);
+  border-radius: 50%;
   box-shadow: 0 0 4px 2px var(--rec-color);
+  background-color: var(--rec-color);
+  right: 0;
+  top: 50%;
 }
 
 .header__theme-menu {
@@ -40,16 +62,19 @@
 }
 
 .header__theme-menu-button {
-  color: var(--title-shadow);
+  color: var(--accent-color);
   font-size: 18px;
+  font-family: "IBM Plex mono";
   font-weight: 400;
   border: transparent;
   background: none;
   cursor: pointer;
-  line-height: 18px;
   text-transform: lowercase;
-  height: 27px;
   width: 70px;
+  height: 26px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 .header__theme-menu-list {
@@ -68,24 +93,21 @@
 
 .header__title {
   align-self: flex-end;
-  line-height: 85%;
+  line-height: 83%;
   color: var(--title-color);
-  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  font-size: clamp(7.25rem, 0.5625rem + 14.4531vw, 9.8125rem);
   text-shadow: 4px 4px 0px var(--title-shadow);
 }
 
 .header__subtitle {
   align-self: center;
-  width: 100%;
+  line-height: 130%;
+  font-weight: 700;
 }
 
 .title-decor {
   background-color: var(--title-shadow);
   color: var(--text-color);
-  font-weight: 700;
-  font-size: var(--font-size);
-  line-height: 130%;
-  align-items: center;
 }
 
 .main {
@@ -94,6 +116,7 @@
   grid-template-rows: auto;
   gap: 50px;
   color: var(--main-text-color);
+  line-height: 130%;
 }
 
 .section {
@@ -107,8 +130,32 @@
   font-size: var(--font-size);
 }
 
+.section__middle__text-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.item__title {
+  font-size: 18px;
+}
+
 .item__title__thin {
   font-weight: 400;
+}
+
+.link {
+  text-shadow: 2px 2px 0px var(--title-shadow);
+  text-decoration: none;
+  border: 1px solid transparent;
+}
+
+.link:hover {
+  border-bottom: 1px solid var(--main-text-color);
+}
+
+.link:focus {
+  border: 1px solid var(--main-text-color);
 }
 
 .section__text-item {
@@ -141,7 +188,7 @@
 }
 
 .footer {
-  padding: 20px;
+  margin: 0 20px 20px 20px;
   height: 100vh;
   display: flex;
 }
@@ -157,28 +204,33 @@
 }
 
 @media (width >= 768px) {
-  .header {
-    padding: 10px 10px 0 0;
+  .corner-top {
+    top: 20px;
+    right: 20px;
   }
-  .header__subtitle {
-    width: 50%;
-    justify-self: end;
+
+  .corner-bottom {
+    left: 20px;
+    bottom: 20px;
   }
+
   .header__rec {
-    top: 11px;
-    right: 39px;
+    top: 22px;
+    right: 48px;
   }
-  .header__rec::after {
-    content: "";
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    margin: -5px -20px 0 0;
-    border-radius: 50%;
-    box-shadow: 0 0 4px 2px var(--rec-color);
-    background-color: var(--rec-color);
-    top: 50%;
-    right: 0;
+
+  .header {
+    grid-template-rows: 1fr auto 1fr;
+    padding: 20px;
+  }
+
+  .header__title {
+    margin-inline: -20px;
+  }
+
+  .header__subtitle {
+    justify-self: end;
+    inline-size: 50%;
   }
 
   .main {
@@ -206,6 +258,10 @@
     grid-template-rows: repeat(4, auto);
   }
 
+  .gallery {
+    gap: 20px;
+  }
+
   .gallery__container {
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(3, auto);
@@ -229,6 +285,7 @@
   .main {
     gap: 80px;
   }
+
   .header__theme-menu {
     justify-self: center;
     align-self: flex-start;
