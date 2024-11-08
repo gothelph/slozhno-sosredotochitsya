@@ -1,13 +1,11 @@
 .page {
-  background-attachment: fixed;
-  background: var(--bg-image) center no-repeat var(--bg-color);
-  background-size: cover;
+  background: var(--bg-color) center/cover fixed no-repeat var(--bg-image);
 }
 
 .header {
   height: 100vh;
   position: relative;
-  padding: 10px;
+  padding: var(--header-padding);
   display: grid;
   grid-template-rows: 1fr auto 1fr;
 }
@@ -17,9 +15,9 @@
   position: absolute;
   color: var(--rec-color);
   text-transform: uppercase;
-  top: 13px;
-  right: 39px;
-  display: none;
+  top: calc(3px + var(--header-padding));
+  right: calc(29px + var(--header-padding));
+  display: var(--display-header-rec);
 }
 
 .header__rec::after {
@@ -42,8 +40,8 @@
   height: 25px;
   border-left: 1px solid var(--corner-color);
   border-bottom: 1px solid var(--corner-color);
-  left: 10px;
-  bottom: 10px;
+  left: var(--header-padding);
+  bottom: var(--header-padding);
   z-index: -1;
 }
 
@@ -54,8 +52,8 @@
   height: 25px;
   border-right: 1px solid var(--corner-color);
   border-top: 1px solid var(--corner-color);
-  right: 10px;
-  top: 10px;
+  right: var(--header-padding);
+  top: var(--header-padding);
   z-index: -1;
 }
 
@@ -81,20 +79,20 @@
   text-align: center;
 }
 
-.header__theme-menu-button:focus-visible {
-  outline: 1px solid var(--main-text-color);
-}
-
 .header__theme-menu-button_active {
   outline: var(--hover-color) solid 1px;
 }
 
 .header__theme-menu-button:hover {
-  outline: 1px solid var(--hover-color);
+  outline: var(--hover-color) solid 1px;
 }
 
 .header__theme-menu-button:focus {
   border-bottom: var(--hover-color);
+}
+
+.header__theme-menu-button:focus-visible {
+  outline: var(--hover-color) solid 1px;
 }
 
 .header__theme-menu-list {
@@ -199,9 +197,13 @@
 }
 
 .gallery__image {
+  display: flex;
+}
+
+.gallery__image-item {
+  object-fit: cover;
   width: 100%;
   height: 100%;
-  object-fit: cover;
 }
 
 .footer {
@@ -221,24 +223,12 @@
 }
 
 @media (width >= 768px) {
-  .corner::before {
-    left: 20px;
-    bottom: 20px;
-  }
-
-  .corner::after {
-    top: 20px;
-    right: 20px;
-  }
-
-  .header__rec {
-    top: 22px;
-    right: 48px;
+  :root {
+    --header-padding: 20px;
   }
 
   .header {
     grid-template-rows: 1fr auto 1fr;
-    padding: 20px;
   }
 
   .header__title {
@@ -298,17 +288,14 @@
     grid-template-rows: repeat(3, auto);
   }
 
-  .gallery__image:nth-child(1) {
-    grid-column: span 2;
-  }
-  .gallery__image:nth-child(2) {
-    grid-row: span 2;
-  }
-  .gallery__image:nth-child(3) {
-    grid-row: span 2;
-  }
+  .gallery__image:nth-child(1),
   .gallery__image:nth-child(5) {
     grid-column: span 2;
+  }
+
+  .gallery__image:nth-child(2),
+  .gallery__image:nth-child(3) {
+    grid-row: span 2;
   }
 
   .footer {
@@ -350,5 +337,3 @@
     grid-row-start: 2;
   }
 }
-
-/*Да, блин, да как?*/

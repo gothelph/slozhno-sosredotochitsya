@@ -13,4 +13,6 @@
   --hover-color: var(--accent-color);
   --article-title-color: var(--bg-color);
   --font-size: "IBM Plex mono", 18px;
+  --header-padding: 10px;
+  --display-header-rec: initial;
 }

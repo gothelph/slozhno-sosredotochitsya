@@ -13,8 +13,12 @@
   --hover-color: var(--accent-color);
   --article-title-color: var(--text-color);
   --corner-color: var(--accent-color);
+  --display-header-rec: initial;
 }
 
-.page.theme_dark .header__rec {
-  display: initial;
+@media (prefers-color-scheme: dark) {
+  :root {
+    --corner-color: var(--accent-color);
+    --display-header-rec: initial;
+  }
 }

@@ -10,6 +10,7 @@
   --section-title-color: var(--main-text-color);
   --hover-color: var(--main-text-color);
   --corner-color: var(--main-text-color);
+  --display-header-rec: none;
 }
 
 @media (prefers-color-scheme: light) {
@@ -23,7 +24,8 @@
     --title-shadow: var(--accent-color);
     --text-box-color: var(--accent-color);
     --section-title-color: var(--main-text-color);
-    --hover-color: 1px solid var(--main-text-color);
+    --hover-color: var(--main-text-color);
     --corner-color: var(--main-text-color);
+    --display-header-rec: none;
   }
 }
