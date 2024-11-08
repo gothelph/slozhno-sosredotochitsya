@@ -50,3 +50,9 @@ a {
   text-decoration: none;
   cursor: pointer;
 }
+
+.page {
+  background-attachment: fixed;
+  background: var(--bg-image) center no-repeat var(--bg-color);
+  background-size: cover;
+}
