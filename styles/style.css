@@ -190,22 +190,20 @@
   gap: 10px;
 }
 
-@media screen {
-  .gallery__container {
-    display: grid;
-    gap: inherit;
-    grid-row: auto;
-  }
+.gallery__container {
+  display: grid;
+  gap: inherit;
+  grid-row: auto;
+}
 
-  .gallery__image {
-    display: flex;
-  }
+.gallery__image {
+  display: flex;
+}
 
-  .gallery__image-item {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-  }
+.gallery__image-item {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .footer {
