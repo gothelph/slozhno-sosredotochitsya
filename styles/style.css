@@ -246,16 +246,15 @@
   }
 
   .section__text-item {
-    grid-column: 2/4;
+    grid-column: 2;
   }
 
   .section {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 2fr;
     grid-template-rows: auto;
   }
 
   .section__middle {
-    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, auto);
   }
 
