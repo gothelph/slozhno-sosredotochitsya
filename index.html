@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/favicon.ico" sizes="any" />
+    <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./images/mobile-icon.png" />
     <meta name="color-scheme" content="dark light" />
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/globals.css" />
@@ -14,9 +17,9 @@
 
     <title>Сложно сосредоточиться</title>
   </head>
+
   <body class="page">
     <div class="header__rec" aria-hidden="true">REC</div>
-
     <header class="header corner">
       <nav class="header__theme-menu">
         <ul class="header__theme-menu-list">
@@ -204,7 +207,69 @@
       <section class="gallery">
         <h3 class="item__title title-decor">А можно в картинках?</h3>
         <div class="gallery__container">
-          <img
+          <picture class="gallery__image">
+            <source srcset="./images/sunset.png" type="image/png" />
+            <source srcset="./images/sunset.avif" type="image/avif" />
+            <source srcset="./images/sunset.webp" type="image/webp" />
+            <img
+              src="./images/sunset.png"
+              srcset="sunset.png 1x, sunset-2x.png 2x"
+              alt="море и горы на фоне заката, рисунок"
+              loading="lazy"
+              class="gallery__image"
+            />
+          </picture>
+          <picture class="gallery__image">
+            <source srcset="./images/ice-cream.png" type="image/png" />
+            <source srcset="./images/ice-cream.avif" type="image/avif" />
+            <source srcset="./images/ice-cream.webp" type="image/webp" />
+            <img
+              src="./images/ice-cream.png"
+              srcset="ice-cream.png 1x, ice-cream-2x.png 2x"
+              alt="мультяшные улыбающиеся шарики мороженого в тарелке с фруктами, ягодами и зонтиком для коктейля"
+              loading="lazy"
+              class="gallery__image"
+            />
+          </picture>
+          <picture class="gallery__image">
+            <source srcset="./images/tape.png" type="image/png" />
+            <source srcset="./images/tape.avif" type="image/avif" />
+            <source srcset="./images/tape.webp" type="image/webp" />
+            <img
+              src="./images/tape.png"
+              srcset="tape.png 1x, tape-2x.png 2x"
+              alt="аудиокассета крупным планом, рисунок в стиле ретровейв"
+              loading="lazy"
+              class="gallery__image"
+            />
+          </picture>
+          <picture class="gallery__image">
+            <source srcset="./images/books.png" type="image/png" />
+            <source srcset="./images/books.avif" type="image/avif" />
+            <source srcset="./images/books.webp" type="image/webp" />
+            <img
+              src="./images/books.png"
+              srcset="books.png 1x, books-2x.png 2x"
+              alt="чашка кофе на стопке книг, рисунок"
+              loading="lazy"
+              class="gallery__image"
+            />
+          </picture>
+
+          <picture class="gallery__image">
+            <source srcset="./images/street.png" type="image/png" />
+            <source srcset="./images/street.avif" type="image/avif" />
+            <source srcset="./images/street.webp" type="image/webp" />
+            <img
+              src="./images/street.png"
+              srcset="street.png 1x, street-2x.png 2x"
+              alt="широкая городская улица с двухэтажными домиками, рисунок в стиле ретровейв"
+              loading="lazy"
+              class="gallery__image"
+            />
+          </picture>
+
+          <!-- <img
             src="./images/sunset.png"
             alt="Закат"
             loading="lazy"
@@ -227,13 +292,13 @@
             alt="Закат"
             loading="lazy"
             class="gallery__image"
-          />
-          <img
+          /> -->
+          <!-- <img
             src="./images/street.png"
             alt="Закат"
             loading="lazy"
             class="gallery__image"
-          />
+          /> -->
         </div>
       </section>
     </main>
@@ -245,3 +310,14 @@
     <script src="./scripts/script.js"></script>
   </body>
 </html>
+
+<!-- <picture class="gallery__image">
+  <source srcset="./images/street.png" type="image/png" />
+  <source srcset="./images/street.avif" type="image/avif" />
+  <source srcset="./images/street.webp" type="image/webp" />
+  <img
+    src="./images/street.png"
+    srcset="street.png 1x, street-2x.png 2x"
+    alt="широкая городская улица с двухэтажными домиками, рисунок в стиле ретровейв"
+    loading="lazy"
+    class="gallery__image-item" -->
