@@ -80,7 +80,7 @@
 }
 
 .header__theme-menu-button:hover {
-  border: var(--hover-color);
+  outline: var(--hover-color);
 }
 
 .header__theme-menu-button:focus {
@@ -161,7 +161,7 @@
 .link {
   text-shadow: 2px 2px 0px var(--title-shadow);
   text-decoration: none;
-  border: 1px solid transparent;
+  outline: 1px solid transparent;
 }
 
 .link:hover {
@@ -169,7 +169,7 @@
 }
 
 .link:focus {
-  border: 1px solid var(--main-text-color);
+  outline: 1px solid var(--main-text-color);
 }
 
 .gallery__image {
@@ -337,4 +337,4 @@
   }
 }
 
-/*Да, блин, да почему?*/
+/*Да, блин, да как?*/
