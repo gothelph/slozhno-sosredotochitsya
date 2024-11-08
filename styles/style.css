@@ -14,7 +14,6 @@
 
 .header__rec {
   font-family: "IBM Plex mono";
-  gap: 10px;
   position: absolute;
   color: var(--rec-color);
   text-transform: uppercase;
