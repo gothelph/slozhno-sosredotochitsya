@@ -22,6 +22,7 @@
   --section-title-color: var(--accent-color);
   --hover-color: 1px solid var(--accent-color);
   --article-title-color: var(--text-color);
+  --corner-color: var(--accent-color);
 }
 
 .page.theme_dark .header__rec {
