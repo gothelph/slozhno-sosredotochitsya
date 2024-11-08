@@ -18,8 +18,12 @@
   --title-color: #db00ff;
   --title-shadow: var(--accent-color);
   --text-box-bg-color: var(--accent-color);
-  --text-box-color: var(--bg-color);
+  --text-box-color: var(--text-color);
   --section-title-color: var(--accent-color);
   --hover-color: 1px solid var(--accent-color);
-  --article-title-color: var(--bg-color);
+  --article-title-color: var(--text-color);
+}
+
+.page.theme_dark .header__rec {
+  display: initial;
 }

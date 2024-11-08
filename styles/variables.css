@@ -17,5 +17,5 @@
   --section-title-color: var(--accent-color);
   --hover-color: 1px solid var(--accent-color);
   --article-title-color: var(--bg-color);
-  --font-size: var("IBM Plex mono", 18px);
+  --font-size: "IBM Plex mono", 18px;
 }
