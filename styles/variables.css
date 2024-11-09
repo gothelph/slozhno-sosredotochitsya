@@ -19,5 +19,5 @@
   --corner-color: var(--accent-color);
   --section-gap: 20px;
   --section-rows: repeat(1fr, 2fr);
-  --gap: 10px;
+  --item-gap: 10px;
 }
