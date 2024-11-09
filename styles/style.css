@@ -150,8 +150,8 @@
 }
 
 .section-causes__items__container {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: auto;
   gap: var(--section-gap);
 }
 
@@ -171,7 +171,7 @@
   grid-template-rows: var(--section-rows);
   display: flex;
   flex-direction: column;
-  gap: var(--section-gap);
+  gap: 1fr 2.06fr;
 }
 
 .item__title {
@@ -317,6 +317,6 @@
   }
 
   .section-causes__items__container {
-    flex-direction: row;
+    grid-template-columns: repeat(3, 1.03fr);
   }
 }

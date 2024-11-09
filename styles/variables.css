@@ -18,6 +18,6 @@
   --display-header-rec: initial;
   --corner-color: var(--accent-color);
   --section-gap: 20px;
-  --section-rows: repeat(2, auto);
+  --section-rows: repeat(1fr, 2fr);
   --gap: 10px;
 }
