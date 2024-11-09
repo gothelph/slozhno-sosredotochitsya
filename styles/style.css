@@ -138,6 +138,7 @@
 .section {
   display: grid;
   gap: var(--section-gap);
+  grid-template-columns: var(--section-rows);
 }
 
 .section-why {
@@ -312,7 +313,7 @@
     flex-direction: row;
   }
 
-  .section__container {
+  .section {
     grid-template-columns: 1fr 2.06fr;
   }
 
