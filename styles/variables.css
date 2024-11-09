@@ -19,5 +19,5 @@
   --corner-color: var(--accent-color);
   --section-gap: 20px;
   --section-rows: repeat(2, auto);
-  --gap: var(--header-padding);
+  --gap: 10px;
 }
