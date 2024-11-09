@@ -170,6 +170,7 @@
 }
 
 .section__container {
+  grid-template-rows: var(--section-rows);
   display: flex;
   flex-direction: column;
   gap: var(--section-gap);
@@ -266,7 +267,7 @@
   }
 
   .section {
-    grid-template-columns: var(--section-rows);
+    grid-template-columns: 1fr 2fr;
     grid-template-rows: auto;
   }
 
