@@ -10,15 +10,9 @@
   --text-box-bg-color: var(--accent-color);
   --text-box-color: var(--text-color);
   --section-title-color: var(--accent-color);
-  --hover-color: var(--accent-color);
+  --hover-color: rgb(250, 0, 112, 40%);
+  --focus-color: var(--accent-color);
   --article-title-color: var(--text-color);
   --corner-color: var(--accent-color);
   --display-header-rec: initial;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --corner-color: var(--accent-color);
-    --display-header-rec: initial;
-  }
 }

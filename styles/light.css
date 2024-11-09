@@ -8,7 +8,8 @@
   --title-shadow: var(--accent-color);
   --text-box-color: var(--accent-color);
   --section-title-color: var(--main-text-color);
-  --hover-color: var(--main-text-color);
+  --hover-color: rgb(53, 52, 48, 40%);
+  --focus-color: var(--main-text-color);
   --corner-color: var(--main-text-color);
   --display-header-rec: none;
 }
@@ -24,7 +25,8 @@
     --title-shadow: var(--accent-color);
     --text-box-color: var(--accent-color);
     --section-title-color: var(--main-text-color);
-    --hover-color: var(--main-text-color);
+    --hover-color: rgb(53, 52, 48, 40%);
+    --focus-color: var(--main-text-color);
     --corner-color: var(--main-text-color);
     --display-header-rec: none;
   }

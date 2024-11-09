@@ -10,9 +10,14 @@
   --text-box-bg-color: var(--accent-color);
   --text-box-color: var(--bg-color);
   --section-title-color: var(--accent-color);
-  --hover-color: var(--accent-color);
+  --hover-color: rgb(250, 0, 112, 40%);
+  --focus-color: var(--accent-color);
   --article-title-color: var(--bg-color);
   --font-size: "IBM Plex mono", 18px;
   --header-padding: 10px;
   --display-header-rec: initial;
+  --corner-color: var(--accent-color);
+  --section-gap: 20px;
+  --section-rows: repeat(2, auto);
+  --gap: var(--header-padding);
 }
