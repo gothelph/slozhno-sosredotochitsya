@@ -171,7 +171,7 @@
   grid-template-rows: var(--section-rows);
   display: flex;
   flex-direction: column;
-  gap: 1fr 2.06fr;
+  gap: var(--section-gap);
 }
 
 .item__title {
@@ -310,6 +310,10 @@
 
   .header__theme-menu-list {
     flex-direction: row;
+  }
+
+  .section__container {
+    grid-template-columns: 1fr 2.06fr;
   }
 
   .section-causes__title {
