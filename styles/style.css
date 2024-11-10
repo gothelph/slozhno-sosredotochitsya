@@ -157,16 +157,11 @@
   gap: var(--section-gap);
 }
 
-.section-causes__text-item {
+.section__text-item {
   display: flex;
   flex-direction: column;
   gap: var(--item-gap);
   line-height: 130%;
-}
-
-.section__text-item {
-  display: grid;
-  gap: var(--item-gap);
 }
 
 .section__container {
